@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEN Z Maroc : Le Piège de la Déstabilisation Étrangère</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- 
+    Chosen Palette: Urgent Red & Blue (#0B3954, #087E8B, #BFD7EA, #FF5A5F, #C81D25)
+    Application Structure Plan: The structure is a highly focused public alert featuring five sections: 1. Urgent Warning (The Hook). 2. The Symptoms (Morocco Facts/Timeline). 3. The Playbook Explained (CANVAS simplified). 4. The Critical Vulnerability (Contamination & Exploitation). 5. Call to Action (Defense). This non-linear, narrative structure focuses solely on delivering a clear, urgent message to a mass audience.
+    Visualization & Content Choices: 
+    - Report Info: CANVAS phases -> Goal: Organize -> Viz/Presentation Method: Simplified HTML Steps -> Interaction: None -> Justification: Breaks down complex strategy into easily digestible, color-coded steps for the public. -> Library/Method: HTML/CSS. CONFIRMING: NO SVG/Mermaid.
+    - Report Info: Risk of Escalation -> Goal: Change -> Viz/Presentation Method: Line Chart (Danger Curve) -> Interaction: None -> Justification: Illustrates how the government's difficulty (cost of repression) increases as the movement broadens (P5 Pillars). -> Library/Method: Chart.js/Canvas. CONFIRMING: NO SVG/Mermaid.
+    CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #BFD7EA; 
+            color: #0B3954;
+        }
+        .urgent-hook {
+            background-color: #C81D25;
+            color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+        }
+        .step-box {
+            background-color: #FFFFFF;
+            border-left: 5px solid #087E8B;
+            transition: all 0.3s ease;
+        }
+        .step-box:hover {
+            border-left: 5px solid #FF5A5F;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px; 
+            margin-left: auto;
+            margin-right: auto;
+            height: 380px;
+            max-height: 450px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="app" class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl py-12">
+
+        <header class="text-center pb-12">
+            <h1 class="text-5xl md:text-6xl font-black text-[#C81D25] tracking-tight">GEN Z Maroc : Le Piège de la Déstabilisation Étrangère</h1>
+            <p class="mt-4 text-xl md:text-2xl font-semibold text-[#0B3954] max-w-4xl mx-auto">Analyse de la stratégie d'exploitation des protestations légitimes par les rivaux géopolitiques.</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="urgent-hook">
+                <p class="text-2xl md:text-3xl font-extrabold text-center tracking-wide">
+                    ⚠️ UN AVERTISSEMENT AU PUBLIC ⚠️
+                </p>
+                <p class="mt-4 text-lg text-center font-medium">
+                    Les manifestations de jeunes en cours au Maroc ont débuté avec une colère **légitime** concernant la santé et l'éducation, mais elles suivent désormais un manuel stratégique étape par étape—une technique utilisée mondialement pour **déstabiliser des pays**. Cette méthode vise à utiliser le chaos pour créer un vide sécuritaire, ce qui ne profite qu'à nos rivaux géopolitiques.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">SYMPTÔMES : L'étude de cas marocaine</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <p class="text-lg font-bold text-[#C81D25]">Phase 0 & 1 : La Mise en Place</p>
+                    <p class="mt-2 text-sm text-gray-700">Le mouvement a trouvé avec succès une **revendication unique et unificatrice** ("صحة لا استادات") après les décès maternels tragiques d'Agadir. C'est l'objectif de la **Phase 1** : unifier divers groupes autour d'un seul chant non idéologique.</p>
+                    <ul class="list-disc list-inside mt-3 space-y-1 text-sm text-[#0B3954]">
+                        <li>**Doléance:** Chômage des jeunes > 45 % dans les villes.</li>
+                        <li>**Slogan:** <span class="font-extrabold italic text-[#FF5A5F]">"صحة لا استادات"</span> (Santé, PAS les Stades).</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <p class="text-lg font-bold text-[#C81D25]">Phase 3 & 4 : Le Pivot</p>
+                    <p class="mt-2 text-sm text-gray-700">Le mouvement a exécuté une **Action Dilemme** (petites marches non autorisées le 27 sep) pour paraître pacifique. Lorsque la répression est arrivée (décès du 01 oct), elle a été immédiatement convertie en **Création de Martyrs**. Mais une défaillance critique a suivi :</p>
+                    <ul class="list-disc list-inside mt-3 space-y-1 text-sm text-[#0B3954]">
+                        <li>**Objectif:** Créer un dilemme pour l'État.</li>
+                        <li>**Échec:** Contamination par le **pillages et le vandalisme** (mineurs Gen Alpha), donnant à l'État un **prétexte** pour réprimer.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">LE MANUEL : Comment fonctionnent les mouvements stratégiques</h2>
+            <p class="text-lg text-[#087E8B] text-center mb-10 max-w-3xl mx-auto">Cette stratégie, utilisée avec succès dans d'autres pays, vise à priver le gouvernement de son pouvoir en retirant systématiquement ses **"Piliers de Soutien."**</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="step-box p-4 rounded-lg shadow-md">
+                    <p class="text-2xl font-extrabold text-[#0B3954]">1. Préparation</p>
+                    <p class="text-sm mt-1 text-gray-700">**Identifier la Douleur Unificatrice.** (Maroc : décès Agadir, chômage élevé)</p>
+                </div>
+                <div class="step-box p-4 rounded-lg shadow-md">
+                    <p class="text-2xl font-extrabold text-[#0B3954]">2. Mobilisation</p>
+                    <p class="text-sm mt-1 text-gray-700">**Former les Activistes à Faible Risque.** (Maroc : Discord, formation "Sécurité Numérique 101")</p>
+                </div>
+                <div class="step-box p-4 rounded-lg shadow-md">
+                    <p class="text-2xl font-extrabold text-[#0B3954]">3. Action</p>
+                    <p class="text-sm mt-1 text-gray-700">**Exécuter le Dilemme.** (Maroc : marche pacifique vs. retenue policière)</p>
+                </div>
+                <div class="step-box p-4 rounded-lg shadow-md">
+                    <p class="text-2xl font-extrabold text-[#0B3954]">4. Contamination</p>
+                    <p class="text-sm mt-1 text-gray-700">**Forcer la Répression ou le Chaos.** (Maroc : création de martyrs et vandalisme)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">LE DANGER : Exploitation par les Rivaux</h2>
+            <p class="text-lg text-[#087E8B] text-center mb-10 max-w-4xl mx-auto">Lorsqu'un mouvement ne parvient pas à maintenir la non-violence, il devient un outil pour les rivaux étrangers. Cette stratégie utilise le **chaos domestique** pour exécuter un agenda géopolitique.</p>
+
+            <div class="card p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-[#C81D25]">Vulnérabilité : Le Coût de la Répression</h3>
+                <p class="text-sm text-gray-700 mb-6">Alors que le mouvement tente la **Phase 5 (Élargissement)**, le coût pour le gouvernement de maintenir l'ordre monte en flèche. Les États rivaux exploitent cette phase coûteuse en poussant deux tactiques de propagande principales simultanément.</p>
+                <div class="chart-container">
+                    <canvas id="dangerCurveChart"></canvas>
+                </div>
+                <p class="text-xs text-center text-gray-600 mt-4">Les menaces les plus urgentes sont les tentatives de lier les revendications sociales aux différends territoriaux, poussant le récit de la **"Fracture Nationale."**</p>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">COMMENT VOUS POUVEZ DÉFENDRE LA NATION</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="step-box p-6 rounded-xl text-center">
+                    <p class="text-5xl text-[#087E8B]">🛡️</p>
+                    <p class="text-xl font-bold mt-3 text-[#0B3954]">REJETER LE CHAOS</p>
+                    <p class="text-sm mt-1 text-gray-700">**Ne vous engagez pas dans le vandalisme ou le pillage.** Ces actes invalident le message du mouvement et fournissent aux rivaux la preuve que la protestation ne vise pas la réforme, mais le chaos.</p>
+                </div>
+                <div class="step-box p-6 rounded-xl text-center">
+                    <p class="text-5xl text-[#087E8B]">👁️</p>
+                    <p class="text-xl font-bold mt-3 text-[#0B3954]">VÉRIFIER L'INFORMATION</p>
+                    <p class="text-sm mt-1 text-gray-700">**Filtrer les récits externes.** Vérifiez qui amplifie les vidéos de violence. Si la source est un média d'État algérien ou des comptes séparatistes connus, ils exploitent la crise.</p>
+                </div>
+                <div class="step-box p-6 rounded-xl text-center">
+                    <p class="text-5xl text-[#087E8B]">🤝</p>
+                    <p class="text-xl font-bold mt-3 text-[#0B3954]">MAINTENIR L'UNITÉ</p>
+                    <p class="text-sm mt-1 text-gray-700">Le pouvoir du mouvement réside dans son **objectif unique**. Continuez à exiger la Santé et l'Éducation. Ne laissez pas les acteurs externes élargir la cause pour inclure des différends territoriaux.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const wrapLabels = (label, maxWidth) => {
+                const words = label.split(' ');
+                let lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                });
+                if (currentLine) {
+                    lines.push(currentLine.trim());
+                }
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                  return label.join(' ');
+                } else {
+                  return label;
+                }
+            };
+            
+            const commonChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#0B3954',
+                            font: {
+                                size: 14,
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        },
+                        titleFont: {
+                            size: 14,
+                             family: "'Inter', sans-serif"
+                        },
+                        bodyFont: {
+                            size: 12,
+                             family: "'Inter', sans-serif"
+                        },
+                        backgroundColor: '#0B3954'
+                    }
+                }
+            };
+
+            const dangerCtx = document.getElementById('dangerCurveChart');
+            if(dangerCtx) {
+                new Chart(dangerCtx, {
+                    type: 'line',
+                    data: {
+                        labels: [
+                            wrapLabels('Phase 0 (Doléance)', 16), 
+                            wrapLabels('Phase 2 (Recrutement)', 16), 
+                            wrapLabels('Phase 3 (Dilemme)', 16), 
+                            wrapLabels('Phase 4 (Rétorsion/Contamination)', 16), 
+                            wrapLabels('Phase 5 (Piliers)', 16)
+                        ],
+                        datasets: [{
+                            label: 'Courbe du Coût de la Répression',
+                            data: [10, 20, 45, 75, 95],
+                            borderColor: '#C81D25',
+                            backgroundColor: 'rgba(200, 29, 37, 0.2)',
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 6,
+                            pointHoverRadius: 8
+                        }]
+                    },
+                    options: {
+                        ...commonChartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                title: {
+                                    display: true,
+                                    text: 'Coût Sécuritaire et Politique (Index)',
+                                    color: '#0B3954'
+                                },
+                                ticks: { color: '#0B3954' },
+                                grid: { color: 'rgba(11, 57, 84, 0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#0B3954' },
+                                grid: { display: false }
+                            }
+                        },
+                        plugins: {
+                           ...commonChartOptions.plugins,
+                           legend: { display: false }
+                        }
+                    }
+                });
+            }
+        });
+
+    </script>
+</body>
+</html>
