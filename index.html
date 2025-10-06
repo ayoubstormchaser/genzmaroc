@@ -53,16 +53,53 @@
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
+        .authority-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #0B3954;
+            color: #BFD7EA;
+            border-radius: 9999px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .authority-badge span {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: #FF5A5F;
+        }
+        /* Custom styles for the embedded TikTok logo */
+        .tiktok-logo {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .tiktok-handle {
+             color: white;
+             font-size: 1.25rem;
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <div id="app" class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl py-12">
 
-        <header class="text-center pb-12">
+        <!-- Language Toggle -->
+        <div class="text-center mb-6">
+            <a href="/Users/ameen/Downloads/public-AR.html" class="inline-block px-4 py-2 bg-[#087E8B] text-white rounded-lg hover:bg-[#0B3954] transition-colors font-semibold">
+                العربية
+            </a>
+        </div>
+
+        <header class="text-center pb-8">
+            <div class="mb-4">
+            </div>
             <h1 class="text-5xl md:text-6xl font-black text-[#C81D25] tracking-tight">GEN Z Maroc : Le Piège de la Déstabilisation Étrangère</h1>
             <p class="mt-4 text-xl md:text-2xl font-semibold text-[#0B3954] max-w-4xl mx-auto">Analyse de la stratégie d'exploitation des protestations légitimes par les rivaux géopolitiques.</p>
         </header>
+        
 
         <section class="mb-16">
             <div class="urgent-hook">
@@ -74,6 +111,28 @@
                 </p>
             </div>
         </section>
+        
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">EXPLICATIONS CLÉS : Le Langage de la Stratégie</h2>
+            <p class="text-lg text-[#087E8B] text-center mb-10 max-w-4xl mx-auto">Pour décoder ce qui se passe, il faut comprendre les outils et les tactiques utilisés pour transformer l'indignation légitime en chaos stratégique.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-6 rounded-xl shadow-lg border-b-4 border-[#087E8B]">
+                    <p class="text-2xl font-extrabold text-[#0B3954] mb-2">Qu'est-ce qu'une "RÉVOLUTION DE COULEUR"?</p>
+                    <p class="text-sm mt-1 text-gray-700">C'est un terme désignant une série de mouvements ayant entraîné des changements de régime (souvent dans les pays post-soviétiques) principalement par des manifestations non-violentes. L'idée est de renverser le pouvoir en utilisant des symboles (d'où le terme "couleur") et la mobilisation populaire, souvent avec un soutien logistique et médiatique important de l'extérieur. L'objectif final est rarement le simple dialogue, mais le changement de gouvernement ou de système.</p>
+                    <p class="text-xs font-semibold mt-3 text-[#FF5A5F]">Exemples historiques: La Révolution des Roses 🇬🇪 (Géorgie), la Révolution Orange 🇺🇦 (Ukraine), et certaines composantes du Printemps Arabe 🇹🇳 (Tunisie), 🇪🇬 (Égypte), **🇮🇶 (Irak)**, **🇸🇾 (Syrie)**.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow-lg border-b-4 border-[#087E8B]">
+                    <p class="text-2xl font-extrabold text-[#0B3954] mb-2">CANVAS & SRDJA POPOVIC</p>
+                    <p class="text-sm mt-1 text-gray-700">**CANVAS** (Centre for Applied Non-Violent Action and Strategies) est une organisation créée par d'anciens militants serbes (dont Srdja Popovic) qui a codifié la méthodologie des mouvements de changement non-violent. C'est un **manuel stratégique** qui décrit les étapes précises (dilemmes, création de martyrs, érosion des piliers) pour démanteler l'autorité de l'État sans armes. Notre analyse montre que les mouvements récents suivent cette séquence presque parfaitement.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow-lg border-b-4 border-[#087E8B] md:col-span-2">
+                    <p class="text-2xl font-extrabold text-[#0B3954] mb-2">"ASTROTURF" (Faux Mouvement Populaire)</p>
+                    <p class="text-sm mt-1 text-gray-700">Le terme **"Astroturf"** (gazon synthétique) est l'opposé de "grassroots" (racines populaires). Il décrit un mouvement qui **semble** spontané et citoyen, mais qui est en réalité financé, organisé ou dirigé par des entités externes (États rivaux, ONG étrangères, fondations). L'Astroturf utilise les doléances réelles de la population (comme la santé ou le chômage) comme **carburant**, tout en orientant secrètement les actions vers la déstabilisation, comme le passage du pacifique au chaos.</p>
+                </div>
+            </div>
+        </section>
+
 
         <section class="mb-16">
             <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">SYMPTÔMES : L'étude de cas marocaine</h2>
@@ -82,7 +141,6 @@
                     <p class="text-lg font-bold text-[#C81D25]">Phase 0 & 1 : La Mise en Place</p>
                     <p class="mt-2 text-sm text-gray-700">Le mouvement a trouvé avec succès une **revendication unique et unificatrice** ("صحة لا استادات") après les décès maternels tragiques d'Agadir. C'est l'objectif de la **Phase 1** : unifier divers groupes autour d'un seul chant non idéologique.</p>
                     <ul class="list-disc list-inside mt-3 space-y-1 text-sm text-[#0B3954]">
-                        <li>**Doléance:** Chômage des jeunes > 45 % dans les villes.</li>
                         <li>**Slogan:** <span class="font-extrabold italic text-[#FF5A5F]">"صحة لا استادات"</span> (Santé, PAS les Stades).</li>
                     </ul>
                 </div>
@@ -122,6 +180,41 @@
         </section>
         
         <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">VÉRIFICATION DES FAITS : L'alignement Tactique</h2>
+            <p class="text-lg text-[#087E8B] text-center mb-10 max-w-4xl mx-auto">L'analyse confirme que le mouvement suit le plan stratégique d'escalade. Le graphique Radar démontre une forte adhésion aux tactiques du manuel, à l'exception des étapes d'élargissement et électorales (en cours).</p>
+
+            <div class="card p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-[#C81D25]">Scorecard Tacticiel (CANVAS)</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">OBJECTIF ULTIME : Le Sahara Marocain</h2>
+            <p class="text-lg text-[#087E8B] text-center mb-8 max-w-4xl mx-auto">L'instabilité actuelle n'est pas un but en soi, mais un **outil de pression géopolitique**. L'objectif réel est de saper la crédibilité du Maroc sur la scène internationale à un moment critique.</p>
+
+            <div class="card p-6 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1 border-r border-gray-200 pr-4">
+                        <p class="text-4xl font-black text-[#0B3954] mb-2">31 OCTOBRE</p>
+                        <p class="text-sm font-bold text-[#C81D25]">Date Critique à l'ONU</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-lg font-bold text-[#087E8B] mb-2">L'Opportunité Géopolitique de l'Adversaire</p>
+                        <p class="text-sm text-gray-700">Le Conseil de Sécurité de l'ONU doit voter le renouvellement du mandat de la MINURSO. Depuis 2024, le Maroc a obtenu un **consensus international croissant** autour de son plan d'autonomie (soutien des USA, France, UK). La déstabilisation domestique sert les rivaux pour :</p>
+                        <ul class="list-disc list-inside mt-2 text-sm text-[#0B3954] space-y-1">
+                            <li>**Nuancer la Résolution:** Affaiblir le langage du texte final.</li>
+                            <li>**Éroder l'Image de Stabilité:** Montrer que le Maroc n'exerce pas un contrôle total sur son territoire.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-16">
             <h2 class="text-3xl font-bold text-[#0B3954] mb-8 text-center">LE DANGER : Exploitation par les Rivaux</h2>
             <p class="text-lg text-[#087E8B] text-center mb-10 max-w-4xl mx-auto">Lorsqu'un mouvement ne parvient pas à maintenir la non-violence, il devient un outil pour les rivaux étrangers. Cette stratégie utilise le **chaos domestique** pour exécuter un agenda géopolitique.</p>
 
@@ -155,6 +248,16 @@
                 </div>
             </div>
         </section>
+        
+        <footer class="mt-16 text-center">
+            <div class="bg-[#0B3954] p-4 rounded-xl inline-block shadow-xl">
+                <p class="text-lg font-bold text-white mb-2">PARTAGEZ CETTE ALERTE</p>
+                <a href="https://www.tiktok.com/@ayoub.stormchaser" target="_blank" class="block text-center no-underline hover:opacity-80 transition">
+                    <p class="text-white font-bold text-lg">Tiktok: @ayoub.stormchaser</p>
+                </a>
+            </div>
+            <p class="text-xs text-gray-600 mt-4">&copy; 2025. Analyse Stratégique OSINT.</p>
+        </footer>
 
     </div>
 
@@ -264,6 +367,64 @@
                         plugins: {
                            ...commonChartOptions.plugins,
                            legend: { display: false }
+                        }
+                    }
+                });
+            }
+
+            const radarCtx = document.getElementById('radarChart');
+            if (radarCtx) {
+                new Chart(radarCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: [
+                            wrapLabels('Unité (Slogan)', 16), 
+                            wrapLabels('Discipline Non-Violente', 16), 
+                            wrapLabels('Cadre Non-Idéologique', 16), 
+                            wrapLabels('Action Dilemme', 16), 
+                            wrapLabels('Gestion des Rétorsions', 16),
+                            wrapLabels('Élargissement des Piliers', 16), 
+                            wrapLabels('Levier Électoral', 16)
+                        ],
+                        datasets: [{
+                            label: 'Alignement au Manuel CANVAS (Score / 100)',
+                            data: [100, 100, 100, 100, 100, 50, 0], 
+                            backgroundColor: 'rgba(8, 126, 139, 0.4)', 
+                            borderColor: '#087E8B',
+                            pointBackgroundColor: '#C81D25',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: '#C81D25',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        ...commonChartOptions,
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    color: 'rgba(11, 57, 84, 0.2)'
+                                },
+                                grid: {
+                                    color: 'rgba(11, 57, 84, 0.2)'
+                                },
+                                pointLabels: {
+                                    font: {
+                                        size: 13,
+                                        family: "'Inter', sans-serif"
+                                    },
+                                    color: '#0B3954'
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                ticks: {
+                                    display: false 
+                                }
+                            }
+                        },
+                        plugins: {
+                           ...commonChartOptions.plugins,
+                           legend: { position: 'bottom' }
                         }
                     }
                 });
